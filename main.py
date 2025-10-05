@@ -1,7 +1,16 @@
 print("Welcome to the Elite 101 Chatbot!")
 name = input("What is your name? ")
-age = input("Hello " + name + ", how old are you? ")
-print("Wow, " + age + ", how young! How may I help you today?")
+age = int(input("Hello " + name + ", how old are you? "))
+if age < 15:
+    print("You are so young! How may I help you today?")
+elif 15<=age<18:
+    print(f"Oh, how to be {age} again! How may I help you today?")
+elif 18<=age<55:
+    print(f"I hope {age} is treating you well! How may I help you today?")
+elif 55<=age<120:
+    print("The older, the wiser! How may I help you today?")
+else:
+    print("You're the oldest person I've ever met! How may I help you?")
 print()
 print("Please choose one of these following options: ")
 print("1. Placeholder")
